@@ -15,6 +15,77 @@
     }
 
     /* ナビゲーションバー */
+    header.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background-color: #ffffffcc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      z-index: 100;
+    }
+/* PC表示 */
+/* 共通 */
+/* 共通（PC表示） */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* スマホ表示で縦並びに変更 */
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: block; /* ← 一旦縦並びにして、ロゴとメニューを分ける */
+    padding: 1rem 1.5rem;
+  }
+
+  .logo {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2a4d69;
+    margin-bottom: 0.8rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: center; /* ← 横並びに中央揃え */
+    gap: 1rem;
+    flex-wrap: wrap;         /* ← 狭い画面で折り返し可能に */
+  }
+
+  .nav-menu a {
+    font-size: 0.9rem;
+    white-space: nowrap;     /* ← 横書きで折り返さない */
+  }
+}
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #2a4d69;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 1.5rem;
+      margin-right: 4rem;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
 
     .subscribe-button {
       background-color: #000;
@@ -174,6 +245,7 @@
 
 </body>
 </html>
+
 
 
 
