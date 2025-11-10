@@ -361,10 +361,10 @@
     <div class="logo">ブロックサプライズ</div>
   </div>
   <nav class="nav-menu">
-    <a href="home">ホーム</a>
-    <a href="guide">ガイド</a>
-    <a href="videos">動画</a>
-    <a href="shorts">ショート</a>
+    <a href="index.html">ホーム</a>
+    <a href="guide.html">ガイド</a>
+    <a href="videos.html">動画</a>
+    <a href="shorts.html">ショート</a>
     <a href="https://www.youtube.com/@block-surprise?sub_confirmation=1" target="_blank" rel="noopener" class="subscribe-button">登録</a>
   </nav>
 </header>
