@@ -2,32 +2,17 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ガイド - ブロックサプライズ</title>
-  <link rel="icon" href="favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>お問い合わせ</title>
   <style>
     body {
-      font-family: "Helvetica Neue", sans-serif;
-      background: #fdfdfd;
-      color: #333;
       margin: 0;
-      padding: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: #fdfdfd;
+      color: #444;
     }
 
     /* ナビゲーションバー */
- header.navbar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 1rem 2rem;
-      background-color: #ffffffcc;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      z-index: 100;
-    }
     header.navbar {
       position: fixed;
       top: 0;
@@ -41,17 +26,6 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       z-index: 100;
     }
-  .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background-color: #fdfdfd;
-  border-bottom: 1px solid #eee;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-/* スマホ表示で縦並びに変更 */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -88,6 +62,34 @@
     white-space: nowrap;     /* ← 横書きで折り返さない */
   }
 }
+    .subscribe-button {
+      background-color: #000;
+      color: #fff !important;
+      padding: 0.3rem 0.8rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      font-size: 0.85rem;
+      text-decoration: none;
+    }
+    .logo {
+      font-size: 1.6rem;
+      font-weight: bold;
+      color: #2a4d69;
+      letter-spacing: 0.05em;
+    }
+
+    .nav-menu {
+      display: flex;
+      gap: 1.5rem;
+      margin-right: 4rem;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #444;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
     .logo {
       font-size: 1.6rem;
       font-weight: bold;
@@ -111,18 +113,34 @@
     .nav-menu a:hover {
       color: #2a4d69;
     }
-
-    .subscribe-button {
-      background-color: #000;
-      color: #fff !important;
-      padding: 0.3rem 0.8rem;
-      border-radius: 9999px;
-      font-weight: bold;
-      font-size: 0.85rem;
-      text-decoration: none;
+    /* メインコンテンツ */
+    main {
+      padding: 3em 2em;
+      text-align: center;
     }
 
-    /* ガイドセクション */
+    h1 {
+      margin-top: 4em;
+      font-size: 1.8rem;
+      margin-bottom: 1em;
+    }
+
+    iframe {
+      border: none;
+      width: 100%;
+      max-width: 640px;
+      height: 2000px;
+      max-height: 100vh;
+    }
+    .site-footer {
+  background: #f5f5f5;
+  padding: 2rem 1.5rem;
+  margin-top: 4rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.85rem;
+  color: #666;
+}
+
     .guide-section {
       max-width: 960px;
       margin: 6rem auto 4rem;
@@ -225,11 +243,11 @@
     <a href="guide.html">ガイド</a>
     <a href="videos.html">動画</a>
     <a href="shorts.html">ショート</a>
-    <a href="https://www.youtube.com/@block-surprise?sub_confirmation=1" target="_blank" rel="noopener" class="subscribe-button" style="margin-right:40px;">登録</a>
+    <a href="https://www.youtube.com/@block-surprise?sub_confirmation=1" target="_blank" rel="noopener" class="subscribe-button">登録</a>
   </nav>
 </header>
 
-  <!-- ガイドセクション -->
+  <!-- メイン -->
   <section class="guide-section">
     <h2 class="section-title">📘 ガイド</h2>
 
@@ -255,29 +273,15 @@
       </ul>
     </div>
   </section>
-
-  <!-- フッター -->
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <p class="footer-text">© 2025 ブロックサプライズ公式サイト</p>
-      <nav class="footer-nav">
-        <a href="guide.html">この世界について</a>
-        <a href="https://www.youtube.com/channel/UCUaJpMmiilIKKPoAqnI0hFQ" target="_blank">YouTubeチャンネル</a>
-        <a href="contact.html">お問い合わせ</a>
-      </nav>
-    </div>
-  </footer>
-
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="footer-text">© 2025 ブロックサプライズ公式サイト</p>
+    <nav class="footer-nav">
+      <a href="guide.html">この世界について</a>
+      <a href="https://www.youtube.com/channel/UCUaJpMmiilIKKPoAqnI0hFQ" target="_blank" rel="noopener">YouTubeチャンネル</a>
+      <a href="contact.html">お問い合わせ</a>
+    </nav>
+  </div>
+</footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
