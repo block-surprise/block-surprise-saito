@@ -15,6 +15,19 @@
     }
 
     /* ナビゲーションバー */
+ header.navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 1rem 2rem;
+      background-color: #ffffffcc;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      z-index: 100;
+    }
     header.navbar {
       position: fixed;
       top: 0;
@@ -28,6 +41,17 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.05);
       z-index: 100;
     }
+  .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fdfdfd;
+  border-bottom: 1px solid #eee;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* スマホ表示で縦並びに変更 */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -64,26 +88,6 @@
     white-space: nowrap;     /* ← 横書きで折り返さない */
   }
 }
-
-    .logo {
-      font-size: 1.6rem;
-      font-weight: bold;
-      color: #2a4d69;
-      letter-spacing: 0.05em;
-    }
-
-    .nav-menu {
-      display: flex;
-      gap: 1.5rem;
-      margin-right: 4rem;
-    }
-
-    .nav-menu a {
-      text-decoration: none;
-      color: #444;
-      font-weight: 500;
-      transition: color 0.3s ease;
-    }
     .logo {
       font-size: 1.6rem;
       font-weight: bold;
@@ -107,6 +111,7 @@
     .nav-menu a:hover {
       color: #2a4d69;
     }
+
     .subscribe-button {
       background-color: #000;
       color: #fff !important;
@@ -265,6 +270,7 @@
 
 </body>
 </html>
+
 
 
 
