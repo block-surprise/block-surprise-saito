@@ -233,7 +233,7 @@
     <p>この動画は、撮影の裏側です</p>
 
 <div id="videoContainer" id="videoWrapper">
-  <img src="thumbnail.png" alt="動画を見る" id="thumbnail" style="cursor:pointer;">
+  <img src="thumbnail.png" alt="動画を見る" id="thumbnail">
 </div>
 
 
@@ -249,7 +249,7 @@
 </footer>
     <script>
 document.getElementById('thumbnail').addEventListener('click', function() {
-  document.getElementById('videoContainer').innerHTML = `
+  document.getElementById('videoWrapper').innerHTML = `
     <iframe src="https://drive.google.com/file/d/1FbgsTeiFzITJJY_gqQiSnlKIIWHXR2Yq/preview" width="640" height="360" allow="autoplay"></iframe>
   `;
 });
