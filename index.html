@@ -508,10 +508,24 @@ renderNews();
     });
   });
 </script>
+<script>
+  document.cookie = "visited=true; max-age=86400; path=/";
+function getCookie(name) {
+  const cookies = document.cookie.split("; ");
+  for (let c of cookies) {
+    const [key, value] = c.split("=");
+    if (key === name) return value;
+  }
+  return null;
+}
 
+const visited = getCookie("visited");
+
+</script>
 
 </body>
 </html>
+
 
 
 
